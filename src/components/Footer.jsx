@@ -1,5 +1,5 @@
-// src/components/Footer.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,11 +37,11 @@ const Footer = () => {
           <div className='ml-10'>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-              <li><a href="/portfolio" className="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
+              <li><Link to="/portfolio" className="text-gray-400 hover:text-white transition-colors">Portfolio</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -49,10 +49,10 @@ const Footer = () => {
           <div className='mr-20'>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="/services#web-development" className="text-gray-400 hover:text-white transition-colors">Website Development & Design</a></li>
-              <li><a href="/services#design" className="text-gray-400 hover:text-white transition-colors">Backend & Database Management</a></li>
-              <li><a href="/services#ecommerce" className="text-gray-400 hover:text-white transition-colors">SEO (Search Engine Optimization)</a></li>
-              <li><a href="/services#maintenance" className="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></li>
+              <li><Link to="/services#web-development" className="text-gray-400 hover:text-white transition-colors">Website Development & Design</Link></li>
+              <li><Link to="/services#design" className="text-gray-400 hover:text-white transition-colors">Backend & Database Management</Link></li>
+              <li><Link to="/services#ecommerce" className="text-gray-400 hover:text-white transition-colors">SEO (Search Engine Optimization)</Link></li>
+              <li><Link to="/services#maintenance" className="text-gray-400 hover:text-white transition-colors">UI/UX Design</Link></li>
             </ul>
           </div>
 
@@ -88,13 +88,6 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               &copy; {currentYear} AspiVision Solutions. All rights reserved.
             </p>
-            {/* <div className="mt-4 md:mt-0">
-              <ul className="flex space-x-6 text-sm">
-                <li><a href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
-                <li><a href="/sitemap" className="text-gray-400 hover:text-white transition-colors">Sitemap</a></li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>

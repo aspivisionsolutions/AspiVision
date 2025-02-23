@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,33 +45,33 @@ const Navbar = () => {
         <div className="flex justify-around items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <span className="text-2xl font-bold mr-2">
                 {isHomePage && !isScrolled ? '⚪️' : '🔵'}
               </span>
               <span className="font-bold text-xl">AspiVision</span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link, index) => (
-              <a
+              <Link
                 key={index}
-                href={link.path}
+                to={link.path}
                 className={`font-medium hover:text-blue-500 transition-colors ${
                   isHomePage && !isScrolled ? 'text-white hover:text-blue-200' : 'text-gray-800 hover:text-blue-600'
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Contact Button - Desktop */}
           <div className="hidden md:block">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className={`py-2 px-4 rounded-md transition duration-300 ${
                 isHomePage && !isScrolled
                   ? 'bg-white hover:bg-gray-100 text-blue-600'
@@ -79,7 +79,7 @@ const Navbar = () => {
               }`}
             >
               Get a Quote
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,22 +108,22 @@ const Navbar = () => {
           <div className="md:hidden mt-4 bg-white rounded-md shadow-lg text-gray-800 overflow-hidden">
             <div className="flex flex-col">
               {navLinks.map((link, index) => (
-                <a
+                <Link
                   key={index}
-                  href={link.path}
+                  to={link.path}
                   className="py-3 px-4 hover:bg-gray-100 transition duration-150"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="py-3 px-4 bg-blue-600 text-white hover:bg-blue-700 transition duration-150"
                 onClick={() => setIsOpen(false)}
               >
                 Get a Quote
-              </a>
+              </Link>
             </div>
           </div>
         )}

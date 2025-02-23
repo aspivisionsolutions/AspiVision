@@ -4,6 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import HeroGif from '../assets/download.gif'
 import Gif2 from '../assets/gif2.gif'
 import TechnologySlider from '../components/TechnologySlider';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     // Featured projects data
@@ -88,18 +89,18 @@ const Home = () => {
                                 Custom web solutions that drive growth and engagement. We transform your vision into digital reality.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a
-                                    href="/portfolio"
+                                <Link
+                                    to="/portfolio"
                                     className="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-6 rounded-md transition duration-300 text-center"
                                 >
                                     View Our Work
-                                </a>
-                                <a
-                                    href="/contact"
+                                </Link>
+                                <Link
+                                    to="/contact"
                                     className="bg-transparent hover:bg-blue-700 text-white border border-white font-medium py-3 px-6 rounded-md transition duration-300 text-center"
                                 >
                                     Get Started
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="md:w-1/2">
@@ -126,8 +127,8 @@ const Home = () => {
                                 <div className="text-4xl mb-4">{service.icon}</div>
                                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                                 <p className="text-gray-600 mb-4 flex-grow">{service.description}</p>
-                                <a
-                                    href={service.link}
+                                <Link
+                                    to={service.link}
                                     className="text-blue-600 hover:text-blue-800 font-medium flex items-center mt-auto self-end"
                                 >
                                     Learn More
@@ -143,7 +144,7 @@ const Home = () => {
                                             clipRule="evenodd"
                                         ></path>
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         ))}
                     </div>
@@ -151,7 +152,7 @@ const Home = () => {
             </section>
 
             <div className="py-20 bg-gray-50">
-                <h3 className="text-3xl font-bold text-center mb-12">Technologies We Work With</h3>                        
+                <h3 className="text-3xl font-bold text-center mb-12">Technologies We Work With</h3>
                 <TechnologySlider />
             </div>
 
@@ -196,15 +197,15 @@ const Home = () => {
                     </div>
 
                     <div className="mt-12 text-center">
-                        <a
-                            href="/portfolio"
+                        <Link
+                            to="/portfolio"
                             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-300"
                         >
                             View All Projects
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -225,12 +226,12 @@ const Home = () => {
                         Let's discuss how we can help your business achieve its digital goals with
                         custom web solutions designed for growth.
                     </p>
-                    <a
-                        href="/contact"
+                    <Link
+                        to="/contact"
                         className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 inline-block"
                     >
                         Request a Free Consultation
-                    </a>
+                    </Link>
                 </div>
             </section>
 
