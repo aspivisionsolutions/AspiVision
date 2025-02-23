@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from '../assets/Logo.png'
+import WhiteLogo from '../assets/whiteLogo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,10 +48,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold mr-2">
-                {isHomePage && !isScrolled ? '⚪️' : '🔵'}
-              </span>
-              <span className="font-bold text-xl">AspiVision</span>
+              <img src={isScrolled ? Logo : WhiteLogo} alt="Logo" className="w-20" />
             </Link>
           </div>
 
