@@ -48,7 +48,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src={isScrolled ? Logo : WhiteLogo} alt="Logo" className="w-20" />
+              <img src={isHomePage ? isScrolled ? Logo : WhiteLogo: Logo} alt="Logo" className="w-20" />
             </Link>
           </div>
 
