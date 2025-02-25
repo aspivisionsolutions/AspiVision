@@ -1,11 +1,11 @@
 import React from 'react';
-import Ecommerce from '../assets/ecommerce.png'
+import dopahiya from "../assets/dopahiya.png"
 
 const ProjectCard = ({ project }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
       <img 
-        src={Ecommerce} 
+        src={project.image} 
         alt={project.title} 
         className="w-full h-48 object-cover"
       />

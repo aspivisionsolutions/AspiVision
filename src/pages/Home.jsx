@@ -4,6 +4,9 @@ import ProjectCard from '../components/ProjectCard';
 import HeroGif from '../assets/download.gif'
 import Gif2 from '../assets/gif2.gif'
 import TechnologySlider from '../components/TechnologySlider';
+import dopahiya from "../assets/dopahiya.png"
+import Ecommerce from '../assets/ecommerce.png'
+import Ayushdev from '../assets/Ayushdev.png'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -11,31 +14,31 @@ const Home = () => {
     const featuredProjects = [
         {
             id: 1,
-            title: 'TechFlow E-commerce Platform',
-            category: 'E-commerce',
-            image: '/api/placeholder/800/600',
-            description: 'Custom online store with inventory management and analytics dashboard',
+            title: 'Dopahiya',
+            category: 'Blog',
+            image: dopahiya,
+            description: 'Web application where users can compare specs of different bikes',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
-            liveLink: 'https://techflow-ecommerce.example.com', // Added this required field
+            liveLink: 'https://dopahiya.netlify.app', // Added this required field
             completionDate: 'June 2024', // Added this required field
             // Note: 'results' and 'link' fields are not used in the component
         },
         {
             id: 2,
-            title: 'TechFlow E-commerce Platform',
+            title: 'KidzWorld',
             category: 'E-commerce',
-            image: '/api/placeholder/800/600',
+            image: Ecommerce,
             description: 'Custom online store with inventory management and analytics dashboard',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
-            liveLink: 'https://techflow-ecommerce.example.com', // Added this required field
+            liveLink: 'https://mykidzworld.netlify.app', // Added this required field
             completionDate: 'June 2024', // Added this required field
             // Note: 'results' and 'link' fields are not used in the component
         },
         {
             id: 3,
-            title: 'TechFlow E-commerce Platform',
-            category: 'E-commerce',
-            image: '/api/placeholder/800/600',
+            title: 'Ayush Ghodke Portfolio',
+            category: 'Portfolio',
+            image: Ayushdev,
             description: 'Custom online store with inventory management and analytics dashboard',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
             liveLink: 'https://techflow-ecommerce.example.com', // Added this required field

@@ -21,29 +21,38 @@ const AboutSection = () => {
               <img src={Journey} alt="Company journey" className="w-[80%] rounded-lg  mx-auto" />
             </div>
             <div className="w-full lg:w-1/2 lg:pl-12">
-              <div className="timeline">
-                <div className="timeline-item mb-6">
-                  <div className="font-bold text-indigo-600">2018</div>
-                  <div className="pl-6 border-l-2 border-indigo-200">
-                    <h4 className="font-semibold">Founded with a Vision</h4>
-                    <p className="text-gray-600">Started as a two-person team dedicated to creating meaningful web experiences.</p>
-                  </div>
-                </div>
-                <div className="timeline-item mb-6">
-                  <div className="font-bold text-indigo-600">2020</div>
-                  <div className="pl-6 border-l-2 border-indigo-200">
-                    <h4 className="font-semibold">Growth & Expansion</h4>
-                    <p className="text-gray-600">Expanded to a team of 15 specialists and opened our first dedicated office.</p>
-                  </div>
-                </div>
-                <div className="timeline-item">
-                  <div className="font-bold text-indigo-600">2023</div>
-                  <div className="pl-6 border-l-2 border-indigo-200">
-                    <h4 className="font-semibold">Industry Recognition</h4>
-                    <p className="text-gray-600">Received multiple awards for our innovative approaches to web development.</p>
-                  </div>
-                </div>
-              </div>
+  <div className="timeline">
+    <div className="timeline-item mb-6">
+      <div className="font-bold text-indigo-600">2023</div>
+      <div className="pl-6 border-l-2 border-indigo-200">
+        <h4 className="font-semibold">The Spark of Innovation</h4>
+        <p className="text-gray-600">
+          A casual conversation turned into a groundbreaking idea—our journey began with a vision to revolutionize the digital space.
+        </p>
+      </div>
+    </div>
+    
+    <div className="timeline-item mb-6">
+      <div className="font-bold text-indigo-600">2024</div>
+      <div className="pl-6 border-l-2 border-indigo-200">
+        <h4 className="font-semibold">Fueling the Passion</h4>
+        <p className="text-gray-600">
+          Our founders immersed themselves in mastering cutting-edge technologies, transforming passion into expertise.
+        </p>
+      </div>
+    </div>
+    
+    <div className="timeline-item mb-6">
+      <div className="font-bold text-indigo-600">2025</div>
+      <div className="pl-6 border-l-2 border-indigo-200">
+        <h4 className="font-semibold">The Birth of a Vision</h4>
+        <p className="text-gray-600">
+          With knowledge, determination, and an unstoppable drive, we officially launched our firm—setting the foundation for innovation and excellence.
+        </p>
+      </div>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
