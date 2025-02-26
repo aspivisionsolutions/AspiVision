@@ -34,7 +34,7 @@ const PortfolioPage = () => {
       image: Ayushdev,
       description: 'Personal developer portfolio showcasing skills, projects, and experience.',
       technologies: ['React', 'Node.js', 'MongoDB'],
-      liveLink: 'https://techflow-ecommerce.example.com',
+      liveLink: 'http://ayushdeveloper.netlify.app',
       completionDate: 'June 2024',
     },
     {
@@ -44,7 +44,7 @@ const PortfolioPage = () => {
       image: MoneyMate,
       description: "A personal finance management tool for tracking expenses and budgeting.",
       technologies: ["React", "Node.js", "MongoDB"],
-      liveLink: "#",
+      liveLink: "https://moneymate-client.vercel.app/login",
       completionDate: "March 2025",
     }
   ];
