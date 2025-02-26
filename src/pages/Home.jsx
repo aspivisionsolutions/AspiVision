@@ -6,7 +6,7 @@ import Gif2 from '../assets/gif2.gif'
 import TechnologySlider from '../components/TechnologySlider';
 import dopahiya from "../assets/dopahiya.png"
 import Ecommerce from '../assets/ecommerce.png'
-import Ayushdev from '../assets/Ayushdev.png'
+import Ayushdev from '../assets/ayushdev.png'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
