@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import dopahiya from "../assets/dopahiya.png";
 import Ecommerce from '../assets/ecommerce.png';
-import Ayushdev from '../assets/Ayushdev.png';
+import Ayushdev from '../assets/ayushdev.png';
 import MoneyMate from '../assets/moneymate.png'; // Assuming you have the Money Mate image
 
 const PortfolioPage = () => {
