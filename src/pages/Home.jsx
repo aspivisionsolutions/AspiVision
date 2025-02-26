@@ -17,7 +17,7 @@ const Home = () => {
             title: 'Dopahiya',
             category: 'Blog',
             image: dopahiya,
-            description: 'Web application where users can compare specs of different bikes',
+            description: 'Web application where users can compare specs of different indian bikes',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
             liveLink: 'https://dopahiya.netlify.app', // Added this required field
             completionDate: 'June 2024', // Added this required field
