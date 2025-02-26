@@ -41,7 +41,7 @@ const Home = () => {
             image: Ayushdev,
             description: 'Custom online store with inventory management and analytics dashboard',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
-            liveLink: 'https://techflow-ecommerce.example.com', // Added this required field
+            liveLink: 'https://ayushdeveloper.netlify.app', // Added this required field
             completionDate: 'June 2024', // Added this required field
             // Note: 'results' and 'link' fields are not used in the component
         }
