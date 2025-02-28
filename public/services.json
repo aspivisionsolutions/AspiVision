@@ -21,7 +21,7 @@
       "icon": "FiMonitor",
       "color": "bg-gradient-to-br from-indigo-500 to-purple-600",
       "keywords": ["responsive web design", "custom website development", "professional web design", "mobile-friendly websites"],
-      "technologies": ["React.js", "HTML5/CSS3", "JavaScript", "Tailwind CSS", "WordPress"],
+      "technologies": ["React.js", "HTML5/CSS3", "JavaScript", "Tailwind CSS", "Bootstrap", "Express", "Node.js", "MongoDB", "PostgreSQL", "Firebase"],
       "seo": {
         "metaTitle": "Professional Website Development & Design Services | AspiVision",
         "metaDescription": "Transform your online presence with our custom website development and design services. Expert solutions for responsive, SEO-friendly, and high-performance websites.",
@@ -65,7 +65,7 @@
       "icon": "FiDatabase",
       "color": "bg-gradient-to-br from-blue-500 to-cyan-600",
       "keywords": ["backend development", "database architecture", "API integration", "server infrastructure", "cloud solutions"],
-      "technologies": ["Node.js", "Express", "MongoDB", "PostgreSQL", "Firebase", "AWS", "Docker", "GraphQL"],
+      "technologies": ["Node.js", "Express", "MongoDB", "PostgreSQL", "Firebase", "Spring Boot", "ASP.NET"],
       "seo": {
         "metaTitle": "Backend Development & Database Solutions | AspiVision",
         "metaDescription": "Expert backend development and database solutions for scalable, secure, and high-performance applications. Custom API development and cloud infrastructure services.",
@@ -109,7 +109,7 @@
       "icon": "FiLayout",
       "color": "bg-gradient-to-br from-pink-500 to-rose-600",
       "keywords": ["user interface design", "user experience strategy", "interactive prototyping", "usability testing"],
-      "technologies": ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "UsabilityHub", "Hotjar"],
+      "technologies": ["Figma", "Canva"],
       "seo": {
         "metaTitle": "Professional UI/UX Design Services | AspiVision",
         "metaDescription": "Transform your digital product with our expert UI/UX design services. Create intuitive, engaging, and user-friendly interfaces that deliver exceptional user experiences.",
