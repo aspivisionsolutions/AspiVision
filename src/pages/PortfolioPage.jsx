@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import dopahiya from "../assets/dopahiya.png";
 import Ecommerce from '../assets/ecommerce.png';
@@ -48,7 +48,9 @@ const PortfolioPage = () => {
       completionDate: "March 2025",
     }
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const categories = ["All", "E-commerce", "Portfolio", "Bike Research", "Finance"];
   const [activeCategory, setActiveCategory] = useState("All");
 

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Journey from '../assets/journey.gif'
 
 const AboutSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section id="about" className="py-16 bg-gray-50 px-16">
       <div className="container mx-auto px-4 mt-20">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TestimonialSlider from '../components/TestimonialSlider';
 import ProjectCard from '../components/ProjectCard';
 import HeroGif from '../assets/download.gif'
@@ -39,7 +39,7 @@ const Home = () => {
             title: 'Ayush Ghodke Portfolio',
             category: 'Portfolio',
             image: Ayushdev,
-            description: 'Custom online store with inventory management and analytics dashboard',
+            description: 'Personal developer portfolio showcasing skills, projects, and experience.',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
             liveLink: 'https://ayushdeveloper.netlify.app', // Added this required field
             completionDate: 'June 2024', // Added this required field
@@ -75,7 +75,9 @@ const Home = () => {
         }
     ];
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="flex flex-col min-h-screen">
             {/* <Navbar /> */}
