@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
@@ -13,7 +13,9 @@ const ContactPage = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const validate = () => {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = 'Name is required';
@@ -100,7 +102,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-sm sm:text-base md:text-lg font-medium text-gray-900">Phone</h3>
-                    <p className="mt-1 text-sm sm:text-base text-gray-600">+91 9022915865</p>
+                    <p className="mt-1 text-sm sm:text-base text-gray-600">+91 7249466063</p>
                   </div>
                 </div>
 

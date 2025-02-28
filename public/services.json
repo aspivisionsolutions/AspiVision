@@ -1,0 +1,179 @@
+[
+    {
+      "id": "website-development",
+      "title": "Website Development & Design",
+      "description": "Custom responsive websites with visually appealing designs and seamless functionality for optimal user experience",
+      "longDescription": "Transform your online presence with our professional website development and design services. We create custom, responsive websites that not only look stunning but also deliver exceptional user experiences across all devices. Our development process focuses on combining aesthetic excellence with technical performance.",
+      "features": [
+        "Mobile-friendly responsive web design for all devices",
+        "Custom UI components and engaging animations",
+        "SEO-optimized website structure and code",
+        "Performance optimized for fast loading speeds",
+        "Accessibility compliance for wider audience reach"
+      ],
+      "benefits": [
+        "Increased online visibility and brand recognition",
+        "Higher conversion rates through optimized user experience",
+        "Improved customer engagement and satisfaction",
+        "Better search engine rankings",
+        "Faster loading times and improved performance"
+      ],
+      "icon": "FiMonitor",
+      "color": "bg-gradient-to-br from-indigo-500 to-purple-600",
+      "keywords": ["responsive web design", "custom website development", "professional web design", "mobile-friendly websites"],
+      "technologies": ["React.js", "HTML5/CSS3", "JavaScript", "Tailwind CSS", "WordPress"],
+      "seo": {
+        "metaTitle": "Professional Website Development & Design Services | AspiVision",
+        "metaDescription": "Transform your online presence with our custom website development and design services. Expert solutions for responsive, SEO-friendly, and high-performance websites.",
+        "focusKeywords": ["website development", "web design", "responsive websites"],
+        "canonicalUrl": "https://aspivision.com/services/website-development"
+      },
+      "faq": [
+        {
+          "question": "How long does it take to develop a website?",
+          "answer": "The timeline varies depending on the project scope, but typically ranges from 4-12 weeks for a complete custom website."
+        },
+        {
+          "question": "Do you provide website maintenance services?",
+          "answer": "Yes, we offer ongoing maintenance packages to ensure your website remains secure, up-to-date, and performing optimally."
+        },
+        {
+          "question": "Will my website be mobile-friendly?",
+          "answer": "Absolutely! All our websites are built with a mobile-first approach, ensuring perfect functionality across all devices."
+        }
+      ]
+    },
+    {
+      "id": "backend-database",
+      "title": "Backend & Database Solutions",
+      "description": "Robust backend systems and optimized database architecture to power your applications with security and scalability",
+      "longDescription": "Build powerful, scalable, and secure backend solutions for your applications. Our expert team designs and implements robust database architectures and server-side systems that ensure optimal performance, security, and reliability for your digital products.",
+      "features": [
+        "Custom API development and integration",
+        "Database design and optimization",
+        "Server-side logic implementation",
+        "Secure authentication systems",
+        "Cloud infrastructure setup and management"
+      ],
+      "benefits": [
+        "Improved application performance and reliability",
+        "Enhanced data security and protection",
+        "Scalable infrastructure for growth",
+        "Optimized database operations",
+        "Reduced operational costs"
+      ],
+      "icon": "FiDatabase",
+      "color": "bg-gradient-to-br from-blue-500 to-cyan-600",
+      "keywords": ["backend development", "database architecture", "API integration", "server infrastructure", "cloud solutions"],
+      "technologies": ["Node.js", "Express", "MongoDB", "PostgreSQL", "Firebase", "AWS", "Docker", "GraphQL"],
+      "seo": {
+        "metaTitle": "Backend Development & Database Solutions | AspiVision",
+        "metaDescription": "Expert backend development and database solutions for scalable, secure, and high-performance applications. Custom API development and cloud infrastructure services.",
+        "focusKeywords": ["backend development", "database solutions", "API integration"],
+        "canonicalUrl": "https://aspivision.com/services/backend-database"
+      },
+      "faq": [
+        {
+          "question": "What database solutions do you offer?",
+          "answer": "We work with both SQL and NoSQL databases, including PostgreSQL, MongoDB, MySQL, and Firebase, choosing the best solution for your specific needs."
+        },
+        {
+          "question": "Can you help with cloud migration?",
+          "answer": "Yes, we provide comprehensive cloud migration services, helping businesses move their applications and databases to cloud platforms like AWS, Google Cloud, or Azure."
+        },
+        {
+          "question": "How do you ensure data security?",
+          "answer": "We implement industry-standard security practices, including encryption, secure authentication, regular backups, and compliance with data protection regulations."
+        }
+      ]
+    },
+    {
+      "id": "ui-ux-design",
+      "title": "UI/UX Design",
+      "description": "User-centered design solutions that enhance user satisfaction through intuitive interfaces and engaging user experiences",
+      "longDescription": "Create exceptional digital experiences with our comprehensive UI/UX design services. We combine aesthetic beauty with functional design to deliver intuitive, engaging, and user-friendly interfaces that delight your users and achieve your business goals.",
+      "features": [
+        "User research and persona development",
+        "Information architecture and user flows",
+        "Interactive prototyping and wireframing",
+        "Visual design and brand integration",
+        "Usability testing and design iterations"
+      ],
+      "benefits": [
+        "Enhanced user satisfaction and engagement",
+        "Improved conversion rates",
+        "Reduced development costs",
+        "Stronger brand consistency",
+        "Data-driven design decisions"
+      ],
+      "icon": "FiLayout",
+      "color": "bg-gradient-to-br from-pink-500 to-rose-600",
+      "keywords": ["user interface design", "user experience strategy", "interactive prototyping", "usability testing"],
+      "technologies": ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "UsabilityHub", "Hotjar"],
+      "seo": {
+        "metaTitle": "Professional UI/UX Design Services | AspiVision",
+        "metaDescription": "Transform your digital product with our expert UI/UX design services. Create intuitive, engaging, and user-friendly interfaces that deliver exceptional user experiences.",
+        "focusKeywords": ["UI design", "UX design", "user interface", "user experience"],
+        "canonicalUrl": "https://aspivision.com/services/ui-ux-design"
+      },
+      "faq": [
+        {
+          "question": "What is your UI/UX design process?",
+          "answer": "Our process includes user research, wireframing, prototyping, visual design, and usability testing to ensure the best possible user experience."
+        },
+        {
+          "question": "How do you ensure designs are user-friendly?",
+          "answer": "We conduct extensive user research, create user personas, and perform usability testing throughout the design process to ensure optimal user-friendliness."
+        },
+        {
+          "question": "Can you work with existing brand guidelines?",
+          "answer": "Yes, we can integrate your existing brand guidelines into the design while ensuring optimal user experience and modern design practices."
+        }
+      ]
+    },
+    {
+      "id": "seo-services",
+      "title": "Search Engine Optimization",
+      "description": "Data-driven SEO strategies to improve your online visibility, drive organic traffic, and increase conversions",
+      "longDescription": "Boost your online presence with our comprehensive SEO services. We implement proven strategies to improve your search engine rankings, increase organic traffic, and drive meaningful conversions through data-driven optimization techniques.",
+      "features": [
+        "Comprehensive SEO audits and competitor analysis",
+        "On-page optimization and content strategy",
+        "Technical SEO implementation",
+        "Link building and off-page optimization",
+        "Performance tracking and ROI reporting"
+      ],
+      "benefits": [
+        "Improved search engine rankings",
+        "Increased organic traffic",
+        "Higher quality leads",
+        "Better ROI on marketing spend",
+        "Long-term sustainable growth"
+      ],
+      "icon": "FiSearch",
+      "color": "bg-gradient-to-br from-amber-500 to-orange-600",
+      "keywords": ["search engine optimization", "organic traffic growth", "keyword research", "SEO audit"],
+      "technologies": ["Google Analytics", "Google Search Console", "SEMrush", "Ahrefs", "Moz", "GTmetrix"],
+      "seo": {
+        "metaTitle": "Professional SEO Services & Optimization | AspiVision",
+        "metaDescription": "Improve your online visibility with our expert SEO services. Data-driven strategies to boost rankings, increase organic traffic, and drive conversions.",
+        "focusKeywords": ["SEO services", "search engine optimization", "organic traffic", "SEO strategy"],
+        "canonicalUrl": "https://aspivision.com/services/seo-services"
+      },
+      "faq": [
+        {
+          "question": "How long does it take to see SEO results?",
+          "answer": "SEO is a long-term strategy, typically taking 3-6 months to see significant results. However, some improvements can be seen within the first few weeks."
+        },
+        {
+          "question": "What's included in your SEO services?",
+          "answer": "Our services include keyword research, on-page optimization, technical SEO, content strategy, link building, and monthly performance reporting."
+        },
+        {
+          "question": "Do you guarantee first-page rankings?",
+          "answer": "While we can't guarantee specific rankings due to search engines' constantly evolving algorithms, we implement proven strategies to improve your visibility and rankings."
+        }
+      ]
+    }
+  ]
+  
