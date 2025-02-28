@@ -53,25 +53,25 @@ const Home = () => {
             title: 'Website Development & Design',
             icon: '🌐',
             description: 'Custom websites with responsive design and seamless user experience',
-            link: '/services#website-development'
+            link: '/services/website-development'
         },
         {
             title: 'Backend & Database Management',
             icon: '💾',
             description: 'Robust backend solutions and efficient database management for seamless performance',
-            link: '/services#backend-database'
+            link: '/services/backend-database'
         },
         {
             title: 'SEO (Search Engine Optimization)',
             icon: '📈',
             description: 'Improve website visibility and organic traffic with expert SEO strategies',
-            link: '/services#seo'
+            link: '/services/seo-services'
         },
         {
             title: 'UX/UI Design',
             icon: '✨',
             description: 'User-centered design that creates engaging digital experiences',
-            link: '/services#design'
+            link: '/services/ui-ux-design'
         }
     ];
 
@@ -111,7 +111,8 @@ const Home = () => {
                         <div className="md:w-1/2">
                             <img
                                 src={HeroGif}
-                                alt="Web development illustration"
+                                loading="lazy"
+                                alt="AspiVision Solutions - Web Development Services"
                                 className="rounded-lg shadow-xl"
                             />
                         </div>
