@@ -1,0 +1,33 @@
+# AspiVision Solutions Robots.txt
+User-agent: *
+Allow: /
+
+# Allow all bots to access these directories
+Allow: /about
+Allow: /services
+Allow: /portfolio
+Allow: /contact
+
+# Prevent access to any sensitive directories if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /api/
+
+# Allow crawling of static assets
+Allow: /static/
+Allow: /images/
+Allow: /assets/
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+
+# Sitemap location
+Sitemap: https://www.aspivision.in/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10 

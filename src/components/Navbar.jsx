@@ -6,7 +6,7 @@ import WhiteLogo from '../assets/whiteLogo.png'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation(); // Get the current route
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,14 +24,60 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Contact', path: '/contact' }
+    { 
+      name: 'Home', 
+      path: '/', 
+      ariaLabel: 'AspiVision Solutions Home - Complete Digital Solutions Provider in Pune and Worldwide' 
+    },
+    { 
+      name: 'About', 
+      path: '/about', 
+      ariaLabel: 'About AspiVision Solutions - Leading Digital Services Company in Pune and Worldwide' 
+    },
+    { 
+      name: 'Services', 
+      path: '/services', 
+      ariaLabel: 'Our Services - Web Development, Backend, SEO, and UI/UX Design Solutions' 
+    },
+    { 
+      name: 'Portfolio', 
+      path: '/portfolio', 
+      ariaLabel: 'View Our Project Portfolio - Successful Digital Solutions Delivered' 
+    },
+    { 
+      name: 'Contact', 
+      path: '/contact', 
+      ariaLabel: 'Contact AspiVision Solutions - Get Expert Digital Services in Pune and Worldwide' 
+    }
   ];
 
-  // Determine navbar background color
+  const serviceLinks = [
+    {
+      name: 'Web Development',
+      path: '/services/website-development',
+      ariaLabel: 'Professional Website Development Services - Custom Solutions for Businesses in Pune and Worldwide',
+      description: 'Expert web development services including responsive design, e-commerce solutions, and custom web applications'
+    },
+    {
+      name: 'Backend & Database',
+      path: '/services/backend-database',
+      ariaLabel: 'Backend Development and Database Management Services - Robust Solutions for Your Business',
+      description: 'Comprehensive backend development and database solutions ensuring secure and scalable systems'
+    },
+    {
+      name: 'SEO Services',
+      path: '/services/seo-services',
+      ariaLabel: 'Professional SEO and Digital Marketing Services - Improve Your Online Visibility',
+      description: 'Strategic SEO services to enhance your digital presence and drive organic traffic'
+    },
+    {
+      name: 'UI/UX Design',
+      path: '/services/ui-ux-design',
+      ariaLabel: 'UI/UX Design Services - Create Engaging User Experiences',
+      description: 'User-centered design solutions for intuitive and conversion-focused interfaces'
+    }
+  ];
+
   const isHomePage = location.pathname === '/';
   const navbarClasses = `fixed w-full z-50 transition-all duration-300 ${
     isHomePage
@@ -42,13 +88,13 @@ const Navbar = () => {
   }`;
 
   return (
-    <nav className={navbarClasses}>
+    <nav className={navbarClasses} role="navigation" aria-label="Main navigation">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-around items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <img src={isHomePage ? isScrolled ? Logo : WhiteLogo: Logo} alt="Logo" className="w-20" />
+            <Link to="/" className="flex items-center" aria-label="AspiVision Solutions - Return to Homepage">
+              <img src={isHomePage ? isScrolled ? Logo : WhiteLogo: Logo} alt="AspiVision Solutions Logo" className="w-20" />
             </Link>
           </div>
 
@@ -61,6 +107,7 @@ const Navbar = () => {
                 className={`font-medium hover:text-blue-500 transition-colors ${
                   isHomePage && !isScrolled ? 'text-white hover:text-blue-200' : 'text-gray-800 hover:text-blue-600'
                 }`}
+                aria-label={link.ariaLabel}
               >
                 {link.name}
               </Link>
@@ -76,6 +123,7 @@ const Navbar = () => {
                   ? 'bg-white hover:bg-gray-100 text-blue-600'
                   : 'bg-blue-600 hover:bg-blue-700 text-white'
               }`}
+              aria-label="Get a Free Quote for Your Project"
             >
               Get a Quote
             </Link>
@@ -88,6 +136,8 @@ const Navbar = () => {
               className={`focus:outline-none ${
                 isHomePage && !isScrolled ? 'text-white' : 'text-gray-800'
               }`}
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +154,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 bg-white rounded-md shadow-lg text-gray-800 overflow-hidden">
+          <div className="md:hidden mt-4 bg-white rounded-md shadow-lg text-gray-800 overflow-hidden" role="menu">
             <div className="flex flex-col">
               {navLinks.map((link, index) => (
                 <Link
@@ -112,6 +162,8 @@ const Navbar = () => {
                   to={link.path}
                   className="py-3 px-4 hover:bg-gray-100 transition duration-150"
                   onClick={() => setIsOpen(false)}
+                  aria-label={link.ariaLabel}
+                  role="menuitem"
                 >
                   {link.name}
                 </Link>
@@ -120,6 +172,8 @@ const Navbar = () => {
                 to="/contact"
                 className="py-3 px-4 bg-blue-600 text-white hover:bg-blue-700 transition duration-150"
                 onClick={() => setIsOpen(false)}
+                aria-label="Get a Free Quote for Your Project"
+                role="menuitem"
               >
                 Get a Quote
               </Link>
