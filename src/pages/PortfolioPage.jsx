@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
 import dopahiya from "../assets/dopahiya.png";
 import Ecommerce from '../assets/ecommerce.png';
@@ -61,12 +62,19 @@ const PortfolioPage = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-12 mt-20">
-          <h1 className="text-4xl font-bold text-gray-900">Our Portfolio</h1>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our diverse range of projects across various industries and solutions.
+      <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-4xl mx-auto mt-20 mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-6">
+            Our Latest Projects
+          </h2>
+          <p className="text-gray-600 text-lg">
+            Discover how we've helped businesses transform their digital presence and achieve their goals through innovative solutions and cutting-edge technology.
           </p>
-        </div>
+        </motion.div>
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
