@@ -1,33 +1,53 @@
 # AspiVision Solutions Robots.txt
+
+# Allow all bots by default
 User-agent: *
 Allow: /
 
-# Allow all bots to access these directories
-Allow: /about
-Allow: /services
-Allow: /portfolio
-Allow: /contact
+# Sitemaps
+Sitemap: https://www.aspivision.in/sitemap.xml
 
-# Prevent access to any sensitive directories if they exist
+# Prevent access to sensitive areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
 Disallow: /api/
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /*.sql$
+Disallow: /*.zip$
+Disallow: /search?
+Disallow: /*?replytocom
+Disallow: /*?preview
+Disallow: /wp-includes/
 
-# Allow crawling of static assets
-Allow: /static/
-Allow: /images/
-Allow: /assets/
-Allow: /*.js
-Allow: /*.css
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.gif
-Allow: /*.svg
+# Special rules for specific bots
+User-agent: GPTBot
+Disallow: /
 
-# Sitemap location
-Sitemap: https://www.aspivision.in/sitemap.xml
+User-agent: ChatGPT-User
+Disallow: /
 
-# Crawl-delay for all bots
-Crawl-delay: 10 
+User-agent: Google-Extended
+Disallow: /
+
+# Note: Modern search engines don't need explicit Allow directives for standard public pages
+# The following are already allowed by default:
+# /about
+# /services
+# /portfolio
+# /contact
+# /static/
+# /images/
+# /assets/
+# /*.js
+# /*.css
+# /*.png
+# /*.jpg
+# /*.jpeg
+# /*.gif
+# /*.svg
+
+# Rate limiting - Note: Crawl-delay is not supported by Google, use Search Console instead
+# Only Bing and some other crawlers respect this
+Crawl-delay: 5 

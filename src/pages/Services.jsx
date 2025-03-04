@@ -21,22 +21,20 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 mt-20">
         {/* Services Introduction */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-6"
-          >
-            Transforming Ideas into Digital Reality
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-600 text-lg mb-8"
-          >
-            At AspiVision Solutions, we offer a comprehensive suite of digital services designed to help businesses thrive in the modern digital landscape. From innovative web development to strategic SEO solutions, our expert team delivers excellence at every step.
-          </motion.p>
+          <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 pb-2">
+          Transforming Ideas into Digital Reality
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          At AspiVision Solutions, we offer a comprehensive suite of digital services designed to help businesses thrive in the modern digital landscape. From innovative web development to strategic SEO solutions, our expert team delivers excellence at every step.
+          </p>
+        </motion.div>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
