@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import dopahiya from "../assets/dopahiya.png";
 import Ecommerce from '../assets/ecommerce.png';
 import Ayushdev from '../assets/ayushdev.png';
+import WadhwaEvents from '../assets/wadhwaevents.png';
 import MoneyMate from '../assets/moneymate.png'; // Assuming you have the Money Mate image
 
 const PortfolioPage = () => {
@@ -29,16 +30,6 @@ const PortfolioPage = () => {
     },
     {
       id: 3,
-      title: 'Ayush Ghodke Portfolio',
-      category: 'Portfolio',
-      image: Ayushdev,
-      description: 'Personal developer portfolio showcasing skills, projects, and experience.',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      liveLink: 'http://ayushdeveloper.netlify.app',
-      completionDate: 'June 2024',
-    },
-    {
-      id: 4,
       title: "Money Mate",
       category: "Finance",
       image: MoneyMate,
@@ -46,12 +37,22 @@ const PortfolioPage = () => {
       technologies: ["React", "Node.js", "MongoDB"],
       liveLink: "https://moneymate-client.vercel.app/login",
       completionDate: "March 2025",
+    },
+    {
+      id: 4,
+      title: "Wadhwa Events",
+      category: "Portfolio",
+      image: WadhwaEvents,
+      description: "A comprehensive event management website for organizing various events such as corporate meetings, college fests, weddings, and more.",
+      technologies: ["React", "Node.js", "Tailwind CSS", "Framer Motion"],
+      liveLink: "https://www.wadhwaevents.com",
+      completionDate: "February 2025",
     }
   ];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const categories = ["All", "E-commerce", "Portfolio", "Bike Research", "Finance"];
+  const categories = ["All", "E-commerce","Portfolio", "Bike Research", "Finance"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects = activeCategory === "All"
