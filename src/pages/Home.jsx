@@ -8,6 +8,7 @@ import dopahiya from "../assets/dopahiya.png"
 import Ecommerce from '../assets/ecommerce.png'
 import Ayushdev from '../assets/ayushdev.png'
 import { Link } from 'react-router-dom';
+import WadhwaEvents from '../assets/wadhwaevents.png'
 
 const Home = () => {
     // Featured projects data
@@ -36,14 +37,13 @@ const Home = () => {
         },
         {
             id: 3,
-            title: 'Ayush Ghodke Portfolio',
-            category: 'Portfolio',
-            image: Ayushdev,
-            description: 'Personal developer portfolio showcasing skills, projects, and experience.',
-            technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
-            liveLink: 'https://ayushdeveloper.netlify.app', // Added this required field
-            completionDate: 'June 2024', // Added this required field
-            // Note: 'results' and 'link' fields are not used in the component
+            title: "Wadhwa Events",
+            category: "Portfolio",
+            image: WadhwaEvents,
+            description: "A comprehensive event management website for organizing various events such as corporate meetings, college fests, weddings, and more.",
+            technologies: ["React", "Node.js", "Tailwind CSS", "Framer Motion"],
+            liveLink: "https://www.wadhwaevents.com",
+            completionDate: "February 2025",
         }
     ];
 

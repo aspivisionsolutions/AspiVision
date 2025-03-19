@@ -90,18 +90,6 @@ const PortfolioPage = () => {
     },
     {
       id: 3,
-      title: 'Ayush Ghodke Portfolio',
-      category: 'Portfolio',
-      image: Ayushdev,
-      description: 'Personal developer portfolio showcasing skills, projects, and experience.',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      liveLink: 'http://ayushdeveloper.netlify.app',
-      completionDate: 'June 2024',
-      icon: <FiUser />,
-      gradient: "from-purple-500 to-pink-500"
-    },
-    {
-      id: 4,
       title: "Money Mate",
       category: "Finance",
       image: MoneyMate,
