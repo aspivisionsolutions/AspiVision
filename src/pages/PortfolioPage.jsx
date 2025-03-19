@@ -8,7 +8,6 @@ import Ecommerce from '../assets/ecommerce.png';
 import Ayushdev from '../assets/ayushdev.png';
 import MoneyMate from '../assets/moneymate.png';
 import WadhwaEvents from '../assets/wadhwaevents.png';
-import MoneyMate from '../assets/moneymate.png'; // Assuming you have the Money Mate image
 
 const ProjectCard = ({ project }) => {
   return (
@@ -58,8 +57,6 @@ const ProjectCard = ({ project }) => {
     </motion.div>
   );
 };
-import WadhwaEvents from '../assets/wadhwaevents.png';
-import MoneyMate from '../assets/moneymate.png'; // Assuming you have the Money Mate image
 
 const PortfolioPage = () => {
   useEffect(() => {
