@@ -7,6 +7,7 @@ import dopahiya from "../assets/dopahiya.png";
 import Ecommerce from '../assets/ecommerce.png';
 import Ayushdev from '../assets/ayushdev.png';
 import MoneyMate from '../assets/moneymate.png';
+import WadhwaEvents from '../assets/wadhwaevents.png';
 
 const ProjectCard = ({ project }) => {
   return (
@@ -110,10 +111,25 @@ const PortfolioPage = () => {
       completionDate: "March 2025",
       icon: <FiDollarSign />,
       gradient: "from-pink-500 to-red-500"
+    },
+    {
+      id: 4,
+      title: "Wadhwa Events",
+      category: "Portfolio",
+      image: WadhwaEvents,
+      description: "A comprehensive event management website for organizing various events such as corporate meetings, college fests, weddings, and more.",
+      technologies: ["React", "Node.js", "Tailwind CSS", "Framer Motion"],
+      liveLink: "https://www.wadhwaevents.com",
+      completionDate: "February 2025",
+      icon: <FiDollarSign />,
+      gradient: "from-red-500 to-orange-500"
     }
   ];
 
   const categories = ["All", "E-commerce", "Portfolio", "Bike Research", "Finance"];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects = activeCategory === "All"
