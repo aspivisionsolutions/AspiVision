@@ -9,6 +9,7 @@ import Ecommerce from '../assets/ecommerce.png'
 import Ayushdev from '../assets/ayushdev.png'
 import { Link } from 'react-router-dom';
 import WadhwaEvents from '../assets/wadhwaevents.png'
+import Stats from '../components/Stats';
 
 const Home = () => {
     // Featured projects data
@@ -161,6 +162,7 @@ const Home = () => {
                 <h3 className="text-3xl font-bold text-center mb-12">Technologies We Work With</h3>
                 <TechnologySlider />
             </div>
+             
 
             {/* Featured Projects */}
             {/* <section className="py-16">
