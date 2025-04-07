@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Journey from '../assets/journey.gif';
 import { motion } from 'framer-motion';
 import * as Fi from 'react-icons/fi';
+import Stats from '../components/Stats';
 
 const AboutSection = () => {
   useEffect(() => {
@@ -80,6 +81,8 @@ const AboutSection = () => {
             </div>
           </div>
         </motion.div>
+
+        <Stats/>
 
         {/* Mission & Vision Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
