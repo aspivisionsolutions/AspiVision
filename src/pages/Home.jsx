@@ -10,21 +10,23 @@ import Ayushdev from '../assets/ayushdev.png'
 import { Link } from 'react-router-dom';
 import WadhwaEvents from '../assets/wadhwaevents.png'
 import Stats from '../components/Stats';
+import GNRRecyclingImage from '../assets/GNRImage.png';
+
 
 const Home = () => {
     // Featured projects data
     const featuredProjects = [
         {
-            id: 1,
-            title: 'Dopahiya',
-            category: 'Blog',
-            image: dopahiya,
-            description: 'Web application where users can compare specs of different indian bikes',
-            technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'], // Added this required field
-            liveLink: 'https://dopahiya.netlify.app', // Added this required field
-            completionDate: 'June 2024', // Added this required field
-            // Note: 'results' and 'link' fields are not used in the component
-        },
+              id: 1,
+              title: "GNR Recycling",
+              category: "Portfolio", // Showcased as a client or company project
+              image: GNRRecyclingImage,
+              description: "Website for a certified e-waste recycling company offering services such as secure data destruction and green IT asset disposal, integrated with Google Sheets for real-time data handling.",
+              technologies: ["React", "Tailwind CSS", "Google Sheets"],
+              liveLink: "https://gnrrecycle.com",
+              completionDate: "April 2025",
+              gradient: "from-green-500 to-lime-500"
+            },
         {
             id: 2,
             title: 'KidzWorld',
