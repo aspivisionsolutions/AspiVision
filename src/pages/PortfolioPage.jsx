@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaMotorcycle } from 'react-icons/fa';
-import { FiShoppingBag, FiUser, FiDollarSign, FiCheckCircle, FiSmile, FiClock, FiTrendingUp } from 'react-icons/fi';
+import { FaMotorcycle, FaRecycle } from 'react-icons/fa';
+import { FiShoppingBag, FiUser, FiDollarSign, FiCheckCircle, FiSmile, FiClock, FiTrendingUp, FiShield } from 'react-icons/fi';
 import * as Fi from 'react-icons/fi';
 import dopahiya from "../assets/dopahiya.png";
 import Ecommerce from '../assets/ecommerce.png';
 import Ayushdev from '../assets/ayushdev.png';
 import MoneyMate from '../assets/moneymate.png';
 import WadhwaEvents from '../assets/wadhwaevents.png';
+import MobikooImage from '../assets/MobikooImage.png';
+import GNRRecyclingImage from '../assets/GNRImage.png';
 
 const ProjectCard = ({ project }) => {
   return (
@@ -15,7 +17,7 @@ const ProjectCard = ({ project }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto"
+      className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto flex flex-col h-full"
     >
       <div className="relative">
         <img 
@@ -24,9 +26,11 @@ const ProjectCard = ({ project }) => {
           className="w-full h-40 object-cover"
         />
       </div>
-      <div className="p-5">
+
+      <div className="p-5 flex flex-col flex-grow">
         <h3 className="text-lg font-bold text-gray-900 mb-2">{project.title}</h3>
         <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech, index) => (
             <span
@@ -37,8 +41,10 @@ const ProjectCard = ({ project }) => {
             </span>
           ))}
         </div>
-        <div className="flex justify-between items-center">
-          <div className="text-xs text-gray-500">
+
+        {/* This section stays at the bottom always */}
+        <div className="mt-auto flex justify-between items-center pt-4">
+          <div className="text-xs text-gray-500 leading-tight">
             <div>{project.category}</div>
             <div>{project.completionDate}</div>
           </div>
@@ -111,6 +117,30 @@ const PortfolioPage = () => {
       completionDate: "February 2025",
       icon: <FiDollarSign />,
       gradient: "from-red-500 to-orange-500"
+    },
+    {
+      id: 5,
+      title: "Mobikoo",
+      category: "Finance", // Based on your existing categories
+      image: MobikooImage,
+      description: "An insurance management platform crafted for efficient policy tracking, claim handling, and digital workflow automation tailored for modern insurance agencies.",
+      technologies: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
+      liveLink: "https://mobikoo.com",
+      completionDate: "March 2025",
+      icon: <FiShield />,
+      gradient: "from-blue-500 to-teal-500"
+    },
+    {
+      id: 6,
+      title: "GNR Recycling",
+      category: "Portfolio", // Showcased as a client or company project
+      image: GNRRecyclingImage,
+      description: "Website for a certified e-waste recycling company offering services such as secure data destruction and green IT asset disposal, integrated with Google Sheets for real-time data handling.",
+      technologies: ["React", "Tailwind CSS", "Google Sheets"],
+      liveLink: "https://gnrrecycle.com",
+      completionDate: "April 2025",
+      icon: <FaRecycle />,
+      gradient: "from-green-500 to-lime-500"
     }
   ];
 
